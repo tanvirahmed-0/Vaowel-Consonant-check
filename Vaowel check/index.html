@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+    <p>Enter the Character: <input id="char"><button onclick="checkVowel()">Check</button></p>
+    <p id="resPara" style="display:none;">It is <span id="res"></span></p>
+    <p id="resPara1" style="display:none;">It is <span id="res1"></span></p>
+
+    <script>
+        function checkVowel()
+        {
+            ch = document.getElementById("char").value;
+        
+        
+            temp = document.getElementById("resPara");
+            temp = document.getElementById("resPara1");
+            temp.style.display = "block";
+        
+                if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
+                document.getElementById("res").innerHTML = "a Vowel";
+                }
+                else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+                document.getElementById("res").innerHTML = "a Vowel";
+                }
+                else{
+                document.getElementById("res1").innerHTML = "a Consonant";
+                }
+        }
+        </script>
+
+</body>
+</html>
